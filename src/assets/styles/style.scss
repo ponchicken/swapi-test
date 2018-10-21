@@ -1,0 +1,65 @@
+body{
+  color: #eee;
+}
+
+#app{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 50px;
+  text-align: center;
+
+  a{
+    color: #ddd;
+    margin: 0 10px;
+  }
+}
+
+#nav+*{
+  flex: 1 0 0;
+}
+
+.home{
+  background: rgb(158, 33, 33);
+  text-align: center;
+}
+
+.persons{
+  background: rgb(12, 16, 78);
+  text-align: center;
+}
+
+.controls{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.5);
+}
+
+.people{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.human{
+  display: block;
+}
+
+.films{
+
+}
+.film{
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0,0,0,.1);
+}
